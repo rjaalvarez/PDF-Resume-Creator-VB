@@ -205,5 +205,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background pdf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\takodachigif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
