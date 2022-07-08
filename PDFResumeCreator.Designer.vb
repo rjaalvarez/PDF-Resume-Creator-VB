@@ -24,6 +24,7 @@ Partial Class pdfResumeCreatorVB
     Private Sub InitializeComponent()
         Me.btnGeneratePDF = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.exitBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGeneratePDF
@@ -46,11 +47,22 @@ Partial Class pdfResumeCreatorVB
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "PDF Resume Creator"
         '
+        'exitBtn
+        '
+        Me.exitBtn.Font = New System.Drawing.Font("Impact", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.exitBtn.Location = New System.Drawing.Point(180, 132)
+        Me.exitBtn.Name = "exitBtn"
+        Me.exitBtn.Size = New System.Drawing.Size(178, 57)
+        Me.exitBtn.TabIndex = 2
+        Me.exitBtn.Text = "Exit"
+        Me.exitBtn.UseVisualStyleBackColor = True
+        '
         'pdfResumeCreatorVB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(547, 217)
+        Me.ClientSize = New System.Drawing.Size(547, 202)
+        Me.Controls.Add(Me.exitBtn)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnGeneratePDF)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
@@ -65,4 +77,5 @@ Partial Class pdfResumeCreatorVB
 
     Friend WithEvents btnGeneratePDF As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents exitBtn As Button
 End Class

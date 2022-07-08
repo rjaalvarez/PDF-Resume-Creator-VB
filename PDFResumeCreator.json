@@ -1,0 +1,33 @@
+{
+    "FullName": "RJ Alvarez",
+    "Image": "ina potato.jpg",
+    "Address": "Lower Ground Floor Cyberzone, SM Cubao",
+    "CityAddress": "Cubao,Quezon City",
+    "PhoneNumber": "0912-345-6789",
+    "EmailAddress": "rjalvarez@gmail.com",
+
+    "ObjectiveTitle": "OBJECTIVE",
+    "Objective": "Seeking an online internship in the computer engineering field in able to learn and gain knowledge from different specialists; to be able to contribute to the growth of the company while developing technical skills.",
+
+    "EducationTitle": "EDUCATION",
+    "EducHSDate": "2005 - 2009",
+    "EducHS": "Secondary Education",
+    "HSschool1": "Lagro High School (1st and 2nd Yr.)",
+    "HSschool2": "Jarmmeth Academy (3rd and 4th Yr.)",
+    "EducClgDate": "2015 - Present",
+    "EducClg": "Tertiary Education",
+    "ClgCourse": "Bachelor of Science in Computer Engineering",
+    "ClgSchool": "Polytechnic University of the Philippines",
+    "ClgAddress": "Anonas Street, Sta. Mesa, Manila",
+
+    "Skills": "SKILLS",
+    "ProgLang": "-   Programming Language: C++",
+    "WebTech": "-   Web Technologies: HTML, CSS, Javascript",
+    "IDE": "-   IDE: Dev-C++, Sublime",
+    "CompLit": "-   Computer Literate (MS-Word,Excel,PowerPoint)",
+    "OtherSkl": "-   Proficient in English",
+
+    "Footer": "I hereby certify that the above statements are true and correct with the best of my knowledge and belief.",
+    "MyName": "RJ Alvarez",
+    "Signature": "mysignature.png"
+}

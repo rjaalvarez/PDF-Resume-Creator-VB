@@ -5,11 +5,12 @@ Imports iTextSharp.text.pdf
 Imports iTextSharp.text.pdf.draw
 Public Class pdfResumeCreatorVB
     Private Sub btnGeneratePDF_Click(sender As Object, e As EventArgs) Handles btnGeneratePDF.Click
-        Dim json_pathfile As String = "C:\Users\RJ\source\repos\PDF Resume Creator\PDFResumeCreator.json"
+        Dim json_pathfile As String = "C:\Users\RJ\source\repos\PDF Resume VB\PDFResumeCreator.json"
         Dim open_jsonfile As String = File.ReadAllText(json_pathfile)
         Dim outputJson As readJson = JsonConvert.DeserializeObject(Of readJson)(open_jsonfile)
         Dim MyResume As Document = New Document()
         PdfWriter.GetInstance(MyResume, New FileStream("C:\Users\RJ\source\repos\PDF Resume VB\ALVAREZ_REINIERJOHN.pdf", FileMode.Create))
+
         Dim font_bold As iTextSharp.text.Font = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.HELVETICA.ToString(), 24, iTextSharp.text.Font.BOLD)
         Dim font_medbold As iTextSharp.text.Font = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.HELVETICA.ToString(), 18, iTextSharp.text.Font.BOLD)
         Dim font_italic As iTextSharp.text.Font = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.HELVETICA.ToString(), 12, iTextSharp.text.Font.ITALIC)
@@ -45,6 +46,7 @@ Public Class pdfResumeCreatorVB
         Dim otherskl As Paragraph = New Paragraph(outputJson.OtherSkl & vbLf & vbLf, font_italic)
         Dim footer As Paragraph = New Paragraph(outputJson.Footer & vbLf & vbLf & vbLf, font_smitalic)
         Dim myname As Paragraph = New Paragraph(outputJson.MyName.ToString().PadRight(30), font_italic)
+
         myname.Alignment = Element.ALIGN_RIGHT
         footer.Alignment = Element.ALIGN_CENTER
         objective.Alignment = Element.ALIGN_JUSTIFIED
@@ -112,4 +114,7 @@ Public Class pdfResumeCreatorVB
         Public Property Signature As String
     End Class
 
+    Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
+        Application.Exit()
+    End Sub
 End Class
